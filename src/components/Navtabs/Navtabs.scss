@@ -1,0 +1,36 @@
+.nav {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background: #F3F6F8;
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    &__item {
+        display: block;
+        width: 100%;
+    }
+    &__icon {
+        display: block;
+        margin: 0 auto 3px;
+        min-width: 28px;
+        width: 28px;
+        height: 28px;
+        color: var(--iconColor);
+    }
+    &__link {
+        display: block;
+        padding: 14px;
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+        color: #728A96;
+        border-radius: 20px 20px 0 0;
+    }
+}

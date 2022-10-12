@@ -1,0 +1,84 @@
+.nft {
+    &__img {
+        position: relative;
+        overflow: hidden;
+        display: block;
+        width: 100%;
+        background: #F3F6F8;
+        border-radius: 10px;
+        &::before {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__info {
+        margin-top: 23px;
+    }
+    &__nickname {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        color: #21ABF9;
+    }
+    &__name {
+        display: block;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1.36;
+    }
+    &__btn {
+        margin-top: 15px;
+    }
+    &__body {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid #E5EAEC;
+    }
+    &__title {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.39;
+    }
+    &__description {
+        display: block;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.36;
+        opacity: 0.6;
+    }
+    &__tags {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+    &__tags-item {
+        display: block;
+        padding: 8px 16px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1;
+        text-align: center;
+        background: #F3F6F8;
+        border-radius: 20px;
+        color: #343436;
+    }
+    &__tags-item + &__tags-item {
+        margin-left: 6px;
+    }
+}

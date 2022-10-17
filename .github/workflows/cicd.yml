@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Update stack service
-        uses: blottery/github-action-ssh@v0.6.3
+        uses: garygrossgarten/github-action-ssh@v0.6.3
         with:
           command: docker service update --force blottery_ui
           host: ${{ secrets.SWARM_HOST }}

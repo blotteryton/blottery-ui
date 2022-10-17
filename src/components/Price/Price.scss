@@ -2,6 +2,24 @@
     display: flex;
     align-items: center;
     margin-top: 5px;
+    &--sm {
+        .price {
+            &__icon-wrap {
+                margin-right: 4px;
+                min-width: 14px;
+                width: 14px;
+                height: 14px;
+            }
+            &__icon {
+                min-width: 10px;
+                width: 10px;
+                height: 10px;
+            }
+            &__value {
+                font-size: 10px;
+            }
+        }
+    }
     &__icon-wrap {
         display: flex;
         align-items: center;
@@ -10,20 +28,20 @@
         min-width: 24px;
         width: 24px;
         height: 24px;
-        background: #0088CC;
+        background: var(--dark-blue-color);
         border-radius: 50%;
     }
     &__icon {
         min-width: 16px;
         width: 16px;
         height: 16px;
-        color: #FFFFFF;
+        color: var(--white-color);
     }
     &__value {
         display: block;
         font-size: 16px;
         font-weight: bold;
         line-height: 1.1;
-        color: #111111;
+        color: var(--black-color);
     }
 }

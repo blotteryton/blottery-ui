@@ -1,12 +1,17 @@
 .input-control {
-    overflow: hidden;
-    border: 1px solid #E5EAEC;
+    border: 1px solid var(--line-color);
     border-radius: 10px;
     &__item {
         padding: 16px;
+        &:first-child {
+            border-radius: 10px 10px 0 0;
+        }
+        &:last-child {
+            border-radius: 0 0 10px 10px;
+        }
     }
     &__item + &__item {
-        border-top: 1px solid #E5EAEC;
+        border-top: 1px solid var(--line-color);
     }
     &__label {
         display: block;
@@ -14,7 +19,7 @@
         font-size: 12px;
         font-weight: 500;
         line-height: 1.33;
-        color: #728A96;
+        color: var(--gray-color);
     }
     &__group {
         display: flex;
@@ -30,12 +35,12 @@
         font-size: 16px;
         font-weight: bold;
         line-height: 1.38;
-        color: #111111;
+        color: var(--black-color);
         background: transparent;
         border: none;
         border-radius: 0;
         &::placeholder {
-            color: #728A96;
+            color: var(--gray-color);
         }
         &:focus {
             outline: none;
@@ -52,7 +57,7 @@
         font-size: 12px;
         font-weight: 500;
         line-height: 1.33;
-        color: #728A96;
+        color: var(--gray-color);
     }
     &__link {
         display: block;
@@ -62,7 +67,7 @@
         font-weight: bold;
         line-height: 1.36;
         text-align: center;
-        color: #21ABF9;
+        color: var(--blue-color);
         background: transparent;
         border: none;
         border-radius: 0;
@@ -90,6 +95,11 @@
         min-width: 24px;
         width: 24px;
         height: 24px;
-        color: #728A96;
+        color: var(--gray-color);
     }
+}
+
+.input-control + .input-control {
+    border-top: none;
+    border-radius: 0 0 10px 10px;
 }

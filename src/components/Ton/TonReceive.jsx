@@ -1,30 +1,16 @@
 import React from 'react';
+import Input from '../Input/Input';
+import Button from '../Button/Button';
 
 import './Ton.scss';
-import sprite from '../../assets/images/sprite.svg';
 
 const TonReceive = () => {
     return (
         <div className='ton'>
             <div className="input-control ton__input">
-                <div className="input-control__item">
-                    <label htmlFor="number-wallet" className="input-control__label">Адрес кошелька:</label>
-                    <div className="input-control__group">
-                        <input type="text" id='number-wallet' className="input-control__input" value={'0x902384034v2304u092323...'} />
-                        <button className="input-control__btn">
-                            <svg className="input-control__icon">
-                                <use href={sprite + '#icon-copy'}></use>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+                <Input idName='ton-adress-wallet' label='Адрес кошелька:' copy='true'/>
             </div>
-            <button className="ton__btn btn">
-                <svg className="btn__icon">
-                    <use href={sprite + '#icon-share'}></use>
-                </svg>
-                <span>Поделиться</span>
-            </button>
+            <Button className="ton__btn" icon='#icon-share' title='Поделиться' />
         </div>
     );
 }

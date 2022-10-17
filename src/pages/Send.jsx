@@ -5,7 +5,7 @@ import TonSend from '../components/Ton/TonSend';
 
 const Send = () => {
     return (
-        <div className='wrapper__content wrapper__content--header'>
+        <div className="wrapper__content wrapper__content--header">
             <Header />
             <Heading title={'Отправить'} />
             <TonSend />

@@ -1,0 +1,44 @@
+.recommended-authors {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        width: calc(50% - 5px);
+        &:nth-child(2n) {
+            margin-left: 10px;
+        }
+        &:nth-child(n + 3) {
+            margin-top: 20px;
+        }
+    }
+    &__img {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        background: var(--background-color);
+        border-radius: 10px;
+        &::before {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__name {
+        display: block;
+        margin-top: 9px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.1;
+    }
+}

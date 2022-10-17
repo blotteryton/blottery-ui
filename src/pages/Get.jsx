@@ -5,7 +5,7 @@ import TonReceive from '../components/Ton/TonReceive';
 
 const Get = () => {
     return (
-        <div className='wrapper__content wrapper__content--header'>
+        <div className="wrapper__content wrapper__content--header">
             <Header />
             <Heading title={'Получить'} />
             <TonReceive />

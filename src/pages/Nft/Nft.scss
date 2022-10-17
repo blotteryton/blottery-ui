@@ -4,7 +4,7 @@
         overflow: hidden;
         display: block;
         width: 100%;
-        background: #F3F6F8;
+        background: var(--background-color);
         border-radius: 10px;
         &::before {
             content: '';
@@ -32,7 +32,7 @@
         font-size: 14px;
         font-weight: 600;
         line-height: 1;
-        color: #21ABF9;
+        color: var(--blue-color);
     }
     &__name {
         display: block;
@@ -46,7 +46,7 @@
     &__body {
         margin-top: 30px;
         padding-top: 30px;
-        border-top: 1px solid #E5EAEC;
+        border-top: 1px solid var(--line-color);
     }
     &__title {
         display: block;
@@ -74,7 +74,7 @@
         font-weight: 600;
         line-height: 1;
         text-align: center;
-        background: #F3F6F8;
+        background: var(--background-color);
         border-radius: 20px;
         color: #343436;
     }

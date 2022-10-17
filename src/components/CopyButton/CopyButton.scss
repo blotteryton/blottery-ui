@@ -1,0 +1,48 @@
+.copy-btn {
+    position: relative;
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 24px;
+        width: 24px;
+        height: 24px;
+        font-size: 0;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__btn-icon {
+        min-width: 24px;
+        width: 24px;
+        height: 24px;
+        color: var(--gray-color);
+    }
+    &__dropdown {
+        position: absolute;
+        top: -4px;
+        right: 0;
+        z-index: 100;
+        transform: translateY(-100%);
+        padding: 16px 22px;
+        min-width: max-content;
+        color: var(--primary-color);
+        background: var(--white-color);
+        border-radius: 10px 10px 0 10px;
+        box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.25s ease;
+        &--active {
+            opacity: 1;
+        }
+    }
+    &__text {
+        display: block;
+        font-size: 12px;
+        font-weight: 500;
+    }
+}

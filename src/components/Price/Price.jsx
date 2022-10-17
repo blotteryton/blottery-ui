@@ -5,7 +5,7 @@ import sprite from '../../assets/images/sprite.svg';
 
 const Price = (props) => {
     return (
-        <div className="price">
+        <div className={"price " + props.className}>
             <div className="price__icon-wrap">
                 <svg className="price__icon">
                     <use href={sprite + '#icon-diamond'}></use>

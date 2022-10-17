@@ -9,21 +9,26 @@
     font-weight: bold;
     line-height: 1;
     text-align: center;
-    color: #FFFFFF;
-    background: #0088CC;
+    color: var(--white-color);
+    background: var(--dark-blue-color);
     border: none;
     border-radius: 200px;
+    transition: all 0.25s ease-in-out;
     &:hover {
-        color: #FFFFFF;
+        color: var(--white-color);
     }
     &:focus {
         outline: none;
+    }
+    &:active {
+        background: var(--blue-color);
+        transition: all 0.05s ease-in-out;
     }
     &__icon {
         margin-right: 6px;
         min-width: 20px;
         width: 20px;
         height: 20px;
-        color: #FFFFFF;
+        color: var(--white-color);
     }
 }

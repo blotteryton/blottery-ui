@@ -1,5 +1,5 @@
 .balance {
-    background: #F3F6F8;
+    background: var(--background-color);
     border-radius: 10px;
     &__top {
         display: flex;
@@ -22,7 +22,7 @@
         font-weight: 600;
         line-height: 1;
         text-transform: uppercase;
-        color: #728A96;
+        color: var(--gray-color);
     }
     &__value {
         display: block;
@@ -32,7 +32,7 @@
     }
     &__main {
         padding: 16px 10px;
-        border-top: 1px solid #E5EAEC;
+        border-top: 1px solid var(--line-color);
         border-radius: 0 0 10px 10px;
     }
     &__list {
@@ -55,17 +55,17 @@
         min-width: 44px;
         width: 44px;
         height: 44px;
-        background: #0088CC;
+        background: var(--dark-blue-color);
         border-radius: 50%;
         &--gradient {
-            background: linear-gradient(135deg, #0088CC 0%, rgba(211, 47, 252, 0.8) 100%);
+            background: var(--purple-gradient);
         }
     }
     &__icon {
         min-width: 24px;
         width: 24px;
         height: 24px;
-        color: #FFFFFF;
+        color: var(--white-color);
         &--lg {
             min-width: 30px;
             width: 30px;

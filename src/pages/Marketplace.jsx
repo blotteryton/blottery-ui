@@ -24,13 +24,13 @@ const Marketplace = () => {
                                 <span className="notification-list__help">Floor Price: 3 TON</span>
                             </div>
                         </div>
-                        <div className="notification-list__block">
+                        {/*<div className="notification-list__block">
                             <span className="notification-list__name">785.44 TON</span>
                             <div className="notification-list__inner">
                                 <span className="notification-list__help">$846.4K</span>
                                 <span className="notification-list__help notification-list__help--green">+250%</span>
                             </div>
-                        </div>
+                        </div>*/}
                     </CustomLink>
                     <CustomLink to='collection' className="notification-list__item">
                         <div className="notification-list__block">
@@ -40,15 +40,15 @@ const Marketplace = () => {
                                 <span className="notification-list__help">Floor Price: 0.4 TON</span>
                             </div>
                         </div>
-                        <div className="notification-list__block">
+                        {/*<div className="notification-list__block">
                             <span className="notification-list__name">785.44 TON</span>
                             <div className="notification-list__inner">
                                 <span className="notification-list__help">$131K</span>
                                 <span className="notification-list__help notification-list__help--green">+32%</span>
                             </div>
-                        </div>
+                        </div>*/}
                     </CustomLink>
-                    <Button className="notification-list__more" title='Все коллекции' />
+                    <Button to='collections' className="notification-list__more" title='Все коллекции' />
                 </div>
             </div>
             <div className="wrapper__section wrapper__section--background">
@@ -86,7 +86,6 @@ const Marketplace = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <Button className="notification-list__more" title='Все новости' />
                             </div>
                         </TabPanel>
                         <TabPanel>
@@ -199,6 +198,7 @@ const Marketplace = () => {
                         </TabPanel>
                     </Tabs>
                 </div>
+                <Button to='news' className="wrapper__more" title='Все новости' />
             </div>
         </div>
     );

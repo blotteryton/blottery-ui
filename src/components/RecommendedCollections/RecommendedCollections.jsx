@@ -27,13 +27,13 @@ const RecommendedCollections = () => {
                                 <span className="recommended-collections__name">Maslenikov [Liga NFT]</span>
                                 <span className="recommended-collections__help">NFT коллекция блогера Димы...</span>
                             </div>
-                            <div className="recommended-collections__block">
+                            {/*<div className="recommended-collections__block">
                                 <span className="recommended-collections__name">785.44 TON</span>
                                 <div className="recommended-collections__inner">
                                     <span className="recommended-collections__help">$741.6K</span>
                                     <span className="recommended-collections__help recommended-collections__help--green">+4250%</span>
                                 </div>
-                            </div>
+                            </div>*/}
                         </div>
                     </CustomLink>
                 </SwiperSlide>
@@ -50,13 +50,13 @@ const RecommendedCollections = () => {
                                 <span className="recommended-collections__name">Maslenikov [Liga NFT]</span>
                                 <span className="recommended-collections__help">NFT коллекция блогера Димы...</span>
                             </div>
-                            <div className="recommended-collections__block">
+                            {/*<div className="recommended-collections__block">
                                 <span className="recommended-collections__name">785.44 TON</span>
                                 <div className="recommended-collections__inner">
                                     <span className="recommended-collections__help">$741.6K</span>
                                     <span className="recommended-collections__help recommended-collections__help--green">+4250%</span>
                                 </div>
-                            </div>
+                            </div>*/}
                         </div>
                     </CustomLink>
                 </SwiperSlide>
@@ -73,13 +73,13 @@ const RecommendedCollections = () => {
                                 <span className="recommended-collections__name">Maslenikov [Liga NFT]</span>
                                 <span className="recommended-collections__help">NFT коллекция блогера Димы...</span>
                             </div>
-                            <div className="recommended-collections__block">
+                            {/*<div className="recommended-collections__block">
                                 <span className="recommended-collections__name">785.44 TON</span>
                                 <div className="recommended-collections__inner">
                                     <span className="recommended-collections__help">$741.6K</span>
                                     <span className="recommended-collections__help recommended-collections__help--green">+4250%</span>
                                 </div>
-                            </div>
+                            </div>*/}
                         </div>
                     </CustomLink>
                 </SwiperSlide>

@@ -9,7 +9,9 @@ import Send from './pages/Send';
 import Get from './pages/Get';
 import Nft from './pages/Nft/Nft';
 import Collection from './pages/Collection';
+import Collections from './pages/Collections';
 import AuthorPage from './pages/AuthorPage';
+import News from './pages/News';
 
 const App = () => {
     return (
@@ -47,6 +49,8 @@ const App = () => {
                                 <Route path='send' element={<Send />}></Route>
                             </Route>
                         </Route>
+                        <Route path='collections' element={<Collections />}></Route>
+                        <Route path='news' element={<News />}></Route>
                     </Route>
                     <Route path="*" element={<Navigate to='cabinet' replace />}></Route>
                 </Route>

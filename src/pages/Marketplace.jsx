@@ -5,8 +5,13 @@ import RecommendedCollections from '../components/RecommendedCollections/Recomme
 import RecommendedAuthors from '../components/RecommendedAuthors/RecommendedAuthors';
 import CustomLink from '../components/CustomLink/CustomLink';
 import Button from '../components/Button/Button';
+import ButtonDefault from '../components/Button/ButtonDefault';
 
 const Marketplace = () => {
+    function clickMe() {
+        console.log('text');
+    }
+
     return (
         <div className="wrapper__content">
             <div className="wrapper__section">
@@ -49,6 +54,7 @@ const Marketplace = () => {
                         </div>*/}
                     </CustomLink>
                     <Button to='collections' className="notification-list__more" title='Все коллекции' />
+                    <ButtonDefault clicked={clickMe} className="notification-list__more" title='Все коллекции' />
                 </div>
             </div>
             <div className="wrapper__section wrapper__section--background">

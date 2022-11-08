@@ -2,23 +2,18 @@ import React from 'react';
 import CustomLink from '../CustomLink/CustomLink';
 
 import './RecommendedAuthors.scss';
-import Ava from "../../assets/images/ava.jpg";
 
-const RecommendedAuthors = () => {
+const RecommendedAuthors = ({recommends, slug}) => {
     return (
         <div className="recommended-authors">
-            <CustomLink to='author' className="recommended-authors__item">
-                <picture className="recommended-authors__img">
-                    <img src={Ava} alt="Ava" />
-                </picture>
-                <span className="recommended-authors__name">Bloger Name</span>
-            </CustomLink>
-            <CustomLink to='author' className="recommended-authors__item">
-                <picture className="recommended-authors__img">
-                    <img src={Ava} alt="Ava" />
-                </picture>
-                <span className="recommended-authors__name">Bloger Name</span>
-            </CustomLink>
+            {recommends.recommended_authors.map(author => (
+                <CustomLink to={'/marketplace/authors/' + author.id + '/'} className="recommended-authors__item" key={slug + author.id}>
+                    <picture className="recommended-authors__img">
+                        <img src={author.avatar} alt="Ava" />
+                    </picture>
+                    <span className="recommended-authors__name">{author.first_name} {author.last_name}</span>
+                </CustomLink>
+            ))}
         </div>
     );
 }

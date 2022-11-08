@@ -1,16 +1,18 @@
 import React from 'react';
 import Input from '../Input/Input';
-import Button from '../Button/Button';
+import QRCode from "react-qr-code";
 
 import './Ton.scss';
 
-const TonReceive = () => {
+const TonReceive = (props) => {
     return (
         <div className='ton'>
             <div className="input-control ton__input">
-                <Input idName='ton-adress-wallet' label='Адрес кошелька:' copy='true'/>
+                <Input idName='ton-address-wallet' label='Адрес кошелька:' copy='true' value={props.value} disabled={true}/>
             </div>
-            <Button className="ton__btn" icon='#icon-share' title='Поделиться' />
+            <div style={{ background: 'white', padding: '16px', textAlign: "center", marginTop: "20px" }}>
+                <QRCode value={props.value} />
+            </div>
         </div>
     );
 }

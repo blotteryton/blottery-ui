@@ -12,7 +12,7 @@ const transfer = () => {
     const amount = document.getElementById("ton-sum")
 
     AccountService.transfer(dest.value, amount.value)
-        .then(response => {
+        .then(() => {
             dest.value = ""
             amount.value = ""
         })

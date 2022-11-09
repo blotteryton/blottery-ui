@@ -144,8 +144,8 @@ export default class Notifications extends Component {
                         <TabList>
                             <Tab>Все</Tab>
                             <Tab>Коллекции</Tab>
-                            <Tab>Розыгрышы</Tab>
                             <Tab>Сейлы</Tab>
+                            <Tab>Розыгрышы</Tab>
                         </TabList>
                         <TabPanel>
                             <div className="notification-list">

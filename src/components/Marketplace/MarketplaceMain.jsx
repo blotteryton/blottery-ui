@@ -6,9 +6,9 @@ import RecommendedCollections from "../RecommendedCollections/RecommendedCollect
 import CustomLink from "../CustomLink/CustomLink";
 import Button from "../Button/Button";
 import RecommendedAuthors from "../RecommendedAuthors/RecommendedAuthors";
-import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import AuthDataService from "../../services/auth.service";
 import Cookies from "js-cookie"
+import Notifications from "../Notifications/Notifications";
 
 
 export default class MarketplaceMain extends Component {
@@ -28,8 +28,8 @@ export default class MarketplaceMain extends Component {
     }
 
     componentDidMount() {
-        this.getRecommendations();
         this.getAuth();
+        this.getRecommendations();
     }
 
     getRecommendations() {
@@ -90,151 +90,8 @@ export default class MarketplaceMain extends Component {
                     <Heading title={'Рекомендуемые авторы'} />
                     <RecommendedAuthors recommends={Recommendations} slug={'recommend_authors_'} />
                 </div>
-                <div className="wrapper__section">
-                    <Heading title={'Новости'} />
-                    <div className="tabs">
-                        <Tabs>
-                            <TabList>
-                                <Tab>Обновления</Tab>
-                                <Tab>Коллекции</Tab>
-                                <Tab>Розыгрышы</Tab>
-                                <Tab>Сейлы</Tab>
-                            </TabList>
-
-                            <TabPanel>
-                                <div className="notification-list">
-                                    <div className="notification-list__item">
-                                        <div className="notification-list__block">
-                                            <picture className="notification-list__img"></picture>
-                                            <div className="notification-list__group">
-                                                <span className="notification-list__name">@user3482</span>
-                                                <span className="notification-list__help">Запуск сейла новой коллекции с 24.09 до 29.09</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="notification-list__item">
-                                        <div className="notification-list__block">
-                                            <picture className="notification-list__img"></picture>
-                                            <div className="notification-list__group">
-                                                <span className="notification-list__name">bloger_99</span>
-                                                <span className="notification-list__help">Удалил NFT “7320390аыва2”</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="notification-list">
-                                    <div className="notification-list__item">
-                                        <div className="notification-list__block">
-                                            <picture className="notification-list__img"></picture>
-                                            <div className="notification-list__group">
-                                                <span className="notification-list__name">Golden Tiger</span>
-                                                <span className="notification-list__help">Floor Price: 3 TON</span>
-                                            </div>
-                                        </div>
-                                        <div className="notification-list__block">
-                                            <span className="notification-list__name">785.44 TON</span>
-                                            <div className="notification-list__inner">
-                                                <span className="notification-list__help">$846.4K</span>
-                                                <span className="notification-list__help notification-list__help--green">+250%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="notification-list__item">
-                                        <div className="notification-list__block">
-                                            <picture className="notification-list__img"></picture>
-                                            <div className="notification-list__group">
-                                                <span className="notification-list__name">Dummy</span>
-                                                <span className="notification-list__help">Floor Price: 0.4 TON</span>
-                                            </div>
-                                        </div>
-                                        <div className="notification-list__block">
-                                            <span className="notification-list__name">785.44 TON</span>
-                                            <div className="notification-list__inner">
-                                                <span className="notification-list__help">$131K</span>
-                                                <span className="notification-list__help notification-list__help--green">+32%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="notification-list">
-                                    <div className="notification-list__item">
-                                        <div className="notification-list__block">
-                                            <picture className="notification-list__img"></picture>
-                                            <div className="notification-list__group">
-                                                <span className="notification-list__name">Golden Tiger</span>
-                                                <span className="notification-list__help">Floor Price: 3 TON</span>
-                                            </div>
-                                        </div>
-                                        <div className="notification-list__block">
-                                            <span className="notification-list__name">785.44 TON</span>
-                                            <div className="notification-list__inner">
-                                                <span className="notification-list__help">$846.4K</span>
-                                                <span className="notification-list__help notification-list__help--green">+250%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="notification-list__item">
-                                        <div className="notification-list__block">
-                                            <picture className="notification-list__img"></picture>
-                                            <div className="notification-list__group">
-                                                <span className="notification-list__name">Dummy</span>
-                                                <span className="notification-list__help">Floor Price: 0.4 TON</span>
-                                            </div>
-                                        </div>
-                                        <div className="notification-list__block">
-                                            <span className="notification-list__name">785.44 TON</span>
-                                            <div className="notification-list__inner">
-                                                <span className="notification-list__help">$131K</span>
-                                                <span className="notification-list__help notification-list__help--green">+32%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                            <TabPanel>
-                                <div className="notification-list">
-                                    <div className="notification-list__item">
-                                        <div className="notification-list__block">
-                                            <picture className="notification-list__img"></picture>
-                                            <div className="notification-list__group">
-                                                <span className="notification-list__name">Golden Tiger</span>
-                                                <span className="notification-list__help">Floor Price: 3 TON</span>
-                                            </div>
-                                        </div>
-                                        <div className="notification-list__block">
-                                            <span className="notification-list__name">785.44 TON</span>
-                                            <div className="notification-list__inner">
-                                                <span className="notification-list__help">$846.4K</span>
-                                                <span className="notification-list__help notification-list__help--green">+250%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="notification-list__item">
-                                        <div className="notification-list__block">
-                                            <picture className="notification-list__img"></picture>
-                                            <div className="notification-list__group">
-                                                <span className="notification-list__name">Dummy</span>
-                                                <span className="notification-list__help">Floor Price: 0.4 TON</span>
-                                            </div>
-                                        </div>
-                                        <div className="notification-list__block">
-                                            <span className="notification-list__name">785.44 TON</span>
-                                            <div className="notification-list__inner">
-                                                <span className="notification-list__help">$131K</span>
-                                                <span className="notification-list__help notification-list__help--green">+32%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </TabPanel>
-                        </Tabs>
-                    </div>
-                    <Button to='news' className="wrapper__more" title='Все новости' />
-                </div>
+                <Notifications heading={'Новости'} more={false} />
+                <Button to='news' className="wrapper__more" title='Все новости' />
             </div>
         );
     }

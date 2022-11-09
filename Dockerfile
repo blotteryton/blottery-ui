@@ -1,4 +1,5 @@
 FROM node:18-alpine as build
+ENV REACT_APP_BLOTTERY_API https://admin-blottery.teegra.io/api/v1/
 WORKDIR /app
 COPY package.json /app/package.json
 RUN yarn install

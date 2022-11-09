@@ -4,18 +4,18 @@ import Heading from '../components/Heading/Heading';
 import Button from '../components/Button/Button';
 //import CustomTabs from '../components/Tabs/Tabs';
 
-const Notification = () => {
+const News = () => {
     return (
         <div className="wrapper__content">
             <div className="wrapper__section">
-                <Heading title={'Уведомления'} />
+                <Heading title={'Новости'} />
                 <div className="tabs">
                     <Tabs>
                         <TabList>
-                            <Tab>Все</Tab>
+                            <Tab>Обновления</Tab>
                             <Tab>Коллекции</Tab>
-                            <Tab>Розыгрышы</Tab>
-                            <Tab>Сейлы</Tab>
+                            <Tab>Розыгрыши</Tab>
+                            <Tab>Сейвы</Tab>
                         </TabList>
         
                         <TabPanel>
@@ -51,13 +51,13 @@ const Notification = () => {
                                             <span className="notification-list__help">Floor Price: 3 TON</span>
                                         </div>
                                     </div>
-                                    {/*<div className="notification-list__block">
+                                    <div className="notification-list__block">
                                         <span className="notification-list__name">785.44 TON</span>
                                         <div className="notification-list__inner">
                                             <span className="notification-list__help">$846.4K</span>
                                             <span className="notification-list__help notification-list__help--green">+250%</span>
                                         </div>
-                                    </div>*/}
+                                    </div>
                                 </div>
                                 <div className="notification-list__item">
                                     <div className="notification-list__block">
@@ -67,13 +67,13 @@ const Notification = () => {
                                             <span className="notification-list__help">Floor Price: 0.4 TON</span>
                                         </div>
                                     </div>
-                                    {/*<div className="notification-list__block">
+                                    <div className="notification-list__block">
                                         <span className="notification-list__name">785.44 TON</span>
                                         <div className="notification-list__inner">
                                             <span className="notification-list__help">$131K</span>
                                             <span className="notification-list__help notification-list__help--green">+32%</span>
                                         </div>
-                                    </div>*/}
+                                    </div>
                                 </div>
                             </div>
                         </TabPanel>
@@ -87,13 +87,13 @@ const Notification = () => {
                                             <span className="notification-list__help">Floor Price: 3 TON</span>
                                         </div>
                                     </div>
-                                    {/*<div className="notification-list__block">
+                                    <div className="notification-list__block">
                                         <span className="notification-list__name">785.44 TON</span>
                                         <div className="notification-list__inner">
                                             <span className="notification-list__help">$846.4K</span>
                                             <span className="notification-list__help notification-list__help--green">+250%</span>
                                         </div>
-                                    </div>*/}
+                                    </div>
                                 </div>
                                 <div className="notification-list__item">
                                     <div className="notification-list__block">
@@ -103,13 +103,13 @@ const Notification = () => {
                                             <span className="notification-list__help">Floor Price: 0.4 TON</span>
                                         </div>
                                     </div>
-                                    {/*<div className="notification-list__block">
+                                    <div className="notification-list__block">
                                         <span className="notification-list__name">785.44 TON</span>
                                         <div className="notification-list__inner">
                                             <span className="notification-list__help">$131K</span>
                                             <span className="notification-list__help notification-list__help--green">+32%</span>
                                         </div>
-                                    </div>*/}
+                                    </div>
                                 </div>
                             </div>
                         </TabPanel>
@@ -123,13 +123,13 @@ const Notification = () => {
                                             <span className="notification-list__help">Floor Price: 3 TON</span>
                                         </div>
                                     </div>
-                                    {/*<div className="notification-list__block">
+                                    <div className="notification-list__block">
                                         <span className="notification-list__name">785.44 TON</span>
                                         <div className="notification-list__inner">
                                             <span className="notification-list__help">$846.4K</span>
                                             <span className="notification-list__help notification-list__help--green">+250%</span>
                                         </div>
-                                    </div>*/}
+                                    </div>
                                 </div>
                                 <div className="notification-list__item">
                                     <div className="notification-list__block">
@@ -139,13 +139,13 @@ const Notification = () => {
                                             <span className="notification-list__help">Floor Price: 0.4 TON</span>
                                         </div>
                                     </div>
-                                    {/*<div className="notification-list__block">
+                                    <div className="notification-list__block">
                                         <span className="notification-list__name">785.44 TON</span>
                                         <div className="notification-list__inner">
                                             <span className="notification-list__help">$131K</span>
                                             <span className="notification-list__help notification-list__help--green">+32%</span>
                                         </div>
-                                    </div>*/}
+                                    </div>
                                 </div>
                             </div>
                         </TabPanel>
@@ -156,4 +156,4 @@ const Notification = () => {
     );
 }
 
-export default Notification;
+export default News;

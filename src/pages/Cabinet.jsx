@@ -1,19 +1,16 @@
 import React from 'react';
 import { Accordion, AccordionItem } from 'react-sanfona';
 import Heading from '../components/Heading/Heading';
-import Balance from '../components/Balance/Balance';
 import CustomLink from '../components/CustomLink/CustomLink';
 import Price from '../components/Price/Price';
 
 import NFTimage from "../assets/images/nft.jpg";
+import CabinetWallet from "../components/Cabinet/CabinetWallet";
 
-const Cabinet = () => {
+const CabinetPage = () => {
     return (
         <div className="wrapper__content">
-            <div className="wrapper__section">
-                <Heading title={'Личный кабинет'} />
-                <Balance ton={'424.869340000'} currency={'19,370.612'}/>
-            </div>
+            <CabinetWallet />
             <div className="wrapper__section">
                 <Heading subtitle={'NFT коллекции'} />
                 <Accordion>
@@ -69,4 +66,4 @@ const Cabinet = () => {
     );
 }
 
-export default Cabinet;
+export default CabinetPage;

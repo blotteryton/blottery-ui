@@ -4,85 +4,33 @@ import CustomLink from '../CustomLink/CustomLink';
 
 import 'swiper/css';
 import './RecommendedCollections.scss';
-import Cover from "../../assets/images/cover.jpg";
-import Ava from "../../assets/images/ava.jpg";
 
-const RecommendedCollections = () => {
+
+const RecommendedCollections = ({recommends, slug}) => {
     return (
         <div className="recommended-collections">
             <Swiper
                 spaceBetween={10}
                 slidesPerView={1}
             >
-                <SwiperSlide>
-                    <CustomLink to='collection' className="recommended-collections__slide">
-                        <picture className="recommended-collections__cover">
-                            <img src={Cover} alt="Cover" />
-                        </picture>
-                        <picture className="recommended-collections__img">
-                            <img src={Ava} alt="User ava" />
-                        </picture>
-                        <div className="recommended-collections__body">
-                            <div className="recommended-collections__block">
-                                <span className="recommended-collections__name">Maslenikov [Liga NFT]</span>
-                                <span className="recommended-collections__help">NFT коллекция блогера Димы...</span>
-                            </div>
-                            <div className="recommended-collections__block">
-                                <span className="recommended-collections__name">785.44 TON</span>
-                                <div className="recommended-collections__inner">
-                                    <span className="recommended-collections__help">$741.6K</span>
-                                    <span className="recommended-collections__help recommended-collections__help--green">+4250%</span>
+                {recommends.recommended_collections.map(collection => (
+                    <SwiperSlide key={collection.id}>
+                        <CustomLink to={'/marketplace/collections/' + collection.id + '/'} className="recommended-collections__slide" key={slug + collection.id}>
+                            <picture className="recommended-collections__cover">
+                                <img src={collection.author.cover} alt="Cover" />
+                            </picture>
+                            <picture className="recommended-collections__img">
+                                <img src={collection.author.avatar} alt="User ava" />
+                            </picture>
+                            <div className="recommended-collections__body">
+                                <div className="recommended-collections__block">
+                                    <span className="recommended-collections__name">{collection.author.first_name} {collection.author.last_name}</span>
+                                    <span className="recommended-collections__help">{collection.description}</span>
                                 </div>
                             </div>
-                        </div>
-                    </CustomLink>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <CustomLink to='collection' className="recommended-collections__slide">
-                        <picture className="recommended-collections__cover">
-                            <img src={Cover} alt="Cover" />
-                        </picture>
-                        <picture className="recommended-collections__img">
-                            <img src={Ava} alt="User ava" />
-                        </picture>
-                        <div className="recommended-collections__body">
-                            <div className="recommended-collections__block">
-                                <span className="recommended-collections__name">Maslenikov [Liga NFT]</span>
-                                <span className="recommended-collections__help">NFT коллекция блогера Димы...</span>
-                            </div>
-                            <div className="recommended-collections__block">
-                                <span className="recommended-collections__name">785.44 TON</span>
-                                <div className="recommended-collections__inner">
-                                    <span className="recommended-collections__help">$741.6K</span>
-                                    <span className="recommended-collections__help recommended-collections__help--green">+4250%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </CustomLink>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <CustomLink to='collection' className="recommended-collections__slide">
-                        <picture className="recommended-collections__cover">
-                            <img src={Cover} alt="Cover" />
-                        </picture>
-                        <picture className="recommended-collections__img">
-                            <img src={Ava} alt="User ava" />
-                        </picture>
-                        <div className="recommended-collections__body">
-                            <div className="recommended-collections__block">
-                                <span className="recommended-collections__name">Maslenikov [Liga NFT]</span>
-                                <span className="recommended-collections__help">NFT коллекция блогера Димы...</span>
-                            </div>
-                            <div className="recommended-collections__block">
-                                <span className="recommended-collections__name">785.44 TON</span>
-                                <div className="recommended-collections__inner">
-                                    <span className="recommended-collections__help">$741.6K</span>
-                                    <span className="recommended-collections__help recommended-collections__help--green">+4250%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </CustomLink>
-                </SwiperSlide>
+                        </CustomLink>
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </div>
     );

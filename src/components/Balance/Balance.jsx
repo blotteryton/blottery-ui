@@ -15,12 +15,12 @@ const Balance = (props) => {
                 <div className="balance__group">
                     <span className="balance__help">RUB</span>
                     <span className="balance__value">{props.currency}</span>
-                    </div>
+                </div>
             </div>
             <div className="balance__main">
                 <ul className="balance__list">
                     <li className="balance__item">
-                        <CustomLink to='get' className="balance__link">
+                        <CustomLink to='get/' className="balance__link">
                             <span className="balance__icon-wrap">
                                 <svg className="balance__icon balance__icon--lg">
                                     <use href={sprite + '#icon-plus'}></use>
@@ -30,33 +30,13 @@ const Balance = (props) => {
                         </CustomLink>
                     </li>
                     <li className="balance__item">
-                        <CustomLink to='send' className="balance__link">
+                        <CustomLink to='send/' className="balance__link">
                             <span className="balance__icon-wrap">
                                 <svg className="balance__icon">
                                     <use href={sprite + '#icon-send'}></use>
                                 </svg>
                             </span>
                             <span>Отправить</span>
-                        </CustomLink>
-                    </li>
-                    <li className="balance__item">
-                        <CustomLink to='history' className="balance__link">
-                            <span className="balance__icon-wrap">
-                                <svg className="balance__icon">
-                                    <use href={sprite + '#icon-history'}></use>
-                                </svg>
-                            </span>
-                            <span>История</span>
-                        </CustomLink>
-                    </li>
-                    <li className="balance__item">
-                        <CustomLink to='premium' className="balance__link">
-                            <span className="balance__icon-wrap balance__icon-wrap--gradient">
-                                <svg className="balance__icon">
-                                    <use href={sprite + '#icon-diamond'}></use>
-                                </svg>
-                            </span>
-                            <span>Премиум</span>
                         </CustomLink>
                     </li>
                 </ul>

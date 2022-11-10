@@ -11,7 +11,7 @@ const Input = (props) => {
         <div className="input-control__item">
             <label htmlFor={props.idName} className="input-control__label">{props.label}</label>
             <div className="input-control__group">
-                <input type="text" id={props.idName} className="input-control__input" />
+                <input type="text" id={props.idName} className="input-control__input" value={props.value} disabled={props.disabled}/>
                 { props.icon ? 
                     <button className="input-control__btn">
                         <svg className="input-control__icon">
@@ -22,7 +22,7 @@ const Input = (props) => {
                     null
                 }
                 { props.link ?
-                    <button className="input-control__link">{props.link}</button>
+                    <button onClick={() => {navigator.clipboard.readText().then((v) => {document.getElementById(props.idName).value=v})}} className="input-control__link">{props.link}</button>
                     :
                     null
                 }
@@ -32,7 +32,7 @@ const Input = (props) => {
                     null
                 }
                 { props.copy ?
-                    <CopyButton active={copyBtnActive} setActive={setCopyBtnActive} />
+                    <CopyButton value={props.value} active={copyBtnActive} setActive={setCopyBtnActive} />
                     :
                     null
                 }

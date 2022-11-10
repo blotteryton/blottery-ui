@@ -173,6 +173,10 @@ path {
             height: 1px;
             background: var(--line-color);
         }
+
+        @media screen and (max-width: 359px) {
+            margin-left: 8px;
+        }
     }
     &__tab-panel {
         display: none;

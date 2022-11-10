@@ -1,18 +1,12 @@
 import React from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import Heading from '../components/Heading/Heading';
-import RecommendedCollections from '../components/RecommendedCollections/RecommendedCollections';
-import RecommendedAuthors from '../components/RecommendedAuthors/RecommendedAuthors';
-import CustomLink from '../components/CustomLink/CustomLink';
-import Button from '../components/Button/Button';
-import ButtonDefault from '../components/Button/ButtonDefault';
+import MarketplaceMain from "../components/Marketplace/MarketplaceMain";
+import {useSearchParams} from "react-router-dom";
 
 const Marketplace = () => {
-    function clickMe() {
-        console.log('text');
-    }
+    const [URLSearchParams] = useSearchParams()
 
     return (
+<<<<<<< HEAD
         <div className="wrapper__content">
             <div className="wrapper__section">
                 <Heading title={'Рекомендованные коллекции'} />
@@ -207,6 +201,9 @@ const Marketplace = () => {
                 <Button to='news' className="wrapper__more" title='Все новости' />
             </div>
         </div>
+=======
+        < MarketplaceMain search_params={URLSearchParams} />
+>>>>>>> fcf2756c5e0416c0e951786cb8d7a03b1f9a7a04
     );
 }
 

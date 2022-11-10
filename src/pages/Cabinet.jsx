@@ -12,7 +12,7 @@ const Cabinet = () => {
         <div className="wrapper__content">
             <div className="wrapper__section">
                 <Heading title={'Личный кабинет'} />
-                <Balance ton={'424.869340000'} currency={'19,370.612'}/>
+                <Balance ton={'424.869340000'} currency={'19,370.612'} sendActive={false} getActive={false} historyActive={true} premiumActive={true} />
             </div>
             <div className="wrapper__section">
                 <Heading subtitle={'NFT коллекции'} />

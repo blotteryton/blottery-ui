@@ -20,7 +20,7 @@ const Balance = (props) => {
             <div className="balance__main">
                 <ul className="balance__list">
                     <li className="balance__item">
-                        <CustomLink to='get' className="balance__link">
+                        <CustomLink to='get' className="balance__link" disabled={props.sendActive}>
                             <span className="balance__icon-wrap">
                                 <svg className="balance__icon balance__icon--lg">
                                     <use href={sprite + '#icon-plus'}></use>
@@ -30,7 +30,7 @@ const Balance = (props) => {
                         </CustomLink>
                     </li>
                     <li className="balance__item">
-                        <CustomLink to='send' className="balance__link">
+                        <CustomLink to='send' className="balance__link" disabled={props.getActive}>
                             <span className="balance__icon-wrap">
                                 <svg className="balance__icon">
                                     <use href={sprite + '#icon-send'}></use>
@@ -40,7 +40,7 @@ const Balance = (props) => {
                         </CustomLink>
                     </li>
                     <li className="balance__item">
-                        <CustomLink to='history' className="balance__link">
+                        <CustomLink to='history' className="balance__link" disabled={props.historyActive}>
                             <span className="balance__icon-wrap">
                                 <svg className="balance__icon">
                                     <use href={sprite + '#icon-history'}></use>
@@ -50,7 +50,7 @@ const Balance = (props) => {
                         </CustomLink>
                     </li>
                     <li className="balance__item">
-                        <CustomLink to='premium' className="balance__link">
+                        <CustomLink to='premium' className="balance__link" disabled={props.premiumActive}>
                             <span className="balance__icon-wrap balance__icon-wrap--gradient">
                                 <svg className="balance__icon">
                                     <use href={sprite + '#icon-diamond'}></use>

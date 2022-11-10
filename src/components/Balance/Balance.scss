@@ -46,6 +46,15 @@
         display: block;
         font-size: 12px;
         font-weight: bold;
+        text-align: center;
+        &[data-disabled='true'] {
+            color: var(--gray-color);
+            .balance {
+                &__icon-wrap {
+                    background: var(--gray-color);
+                }
+            }
+        }
     }
     &__icon-wrap {
         display: flex;

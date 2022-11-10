@@ -5,7 +5,7 @@ import sprite from '../../assets/images/sprite.svg';
 
 const Button = (props) => {
     return (
-        <button onClick={props.clicked} className={"btn " + props.className}>
+        <button onClick={props.clicked} className={"btn " + props.className} disabled={!!props.disabled}>
             { props.icon ? 
                 <svg className="btn__icon">
                     <use href={sprite + props.icon}></use>

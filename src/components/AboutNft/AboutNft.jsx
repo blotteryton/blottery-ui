@@ -22,7 +22,7 @@ export default class AboutNft extends Component {
                 image: "",
                 price: "",
                 categories: [],
-                address: ""
+                sale_address: ""
             },
         };
     }
@@ -55,7 +55,7 @@ export default class AboutNft extends Component {
                     <span className="nft__nickname">@{currentNft.username}</span>
                     <h2 className="nft__name">{currentNft.name}</h2>
                     <Price value={currentNft.price}/>
-                    <Button to={'send'} className="nft__btn" title='Отправить' />
+                    <Button to={`send/?wallet_address=${currentNft.sale_address}&amount=${currentNft.price}`} className="nft__btn" title='Купить' />
                 </div>
                 <div className="nft__body">
                     <h3 className="nft__title">Описание</h3>

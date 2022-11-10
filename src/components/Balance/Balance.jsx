@@ -20,11 +20,7 @@ const Balance = (props) => {
             <div className="balance__main">
                 <ul className="balance__list">
                     <li className="balance__item">
-<<<<<<< HEAD
                         <CustomLink to='get' className="balance__link" disabled={props.sendActive}>
-=======
-                        <CustomLink to='get/' className="balance__link">
->>>>>>> fcf2756c5e0416c0e951786cb8d7a03b1f9a7a04
                             <span className="balance__icon-wrap">
                                 <svg className="balance__icon balance__icon--lg">
                                     <use href={sprite + '#icon-plus'}></use>
@@ -34,11 +30,7 @@ const Balance = (props) => {
                         </CustomLink>
                     </li>
                     <li className="balance__item">
-<<<<<<< HEAD
                         <CustomLink to='send' className="balance__link" disabled={props.getActive}>
-=======
-                        <CustomLink to='send/' className="balance__link">
->>>>>>> fcf2756c5e0416c0e951786cb8d7a03b1f9a7a04
                             <span className="balance__icon-wrap">
                                 <svg className="balance__icon">
                                     <use href={sprite + '#icon-send'}></use>
@@ -47,7 +39,6 @@ const Balance = (props) => {
                             <span>Отправить</span>
                         </CustomLink>
                     </li>
-<<<<<<< HEAD
                     <li className="balance__item">
                         <CustomLink to='history' className="balance__link" disabled={props.historyActive}>
                             <span className="balance__icon-wrap">
@@ -68,8 +59,6 @@ const Balance = (props) => {
                             <span>Премиум</span>
                         </CustomLink>
                     </li>
-=======
->>>>>>> fcf2756c5e0416c0e951786cb8d7a03b1f9a7a04
                 </ul>
             </div>
         </div>

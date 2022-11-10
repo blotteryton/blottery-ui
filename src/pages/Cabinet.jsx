@@ -10,14 +10,7 @@ import CabinetWallet from "../components/Cabinet/CabinetWallet";
 const CabinetPage = () => {
     return (
         <div className="wrapper__content">
-<<<<<<< HEAD
-            <div className="wrapper__section">
-                <Heading title={'Личный кабинет'} />
-                <Balance ton={'424.869340000'} currency={'19,370.612'} sendActive={false} getActive={false} historyActive={true} premiumActive={true} />
-            </div>
-=======
             <CabinetWallet />
->>>>>>> fcf2756c5e0416c0e951786cb8d7a03b1f9a7a04
             <div className="wrapper__section">
                 <Heading subtitle={'NFT коллекции'} />
                 <Accordion>

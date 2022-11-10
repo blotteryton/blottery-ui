@@ -49,6 +49,7 @@
         text-align: center;
         &[data-disabled='true'] {
             color: var(--gray-color);
+            pointer-events: none;
             .balance {
                 &__icon-wrap {
                     background: var(--gray-color);

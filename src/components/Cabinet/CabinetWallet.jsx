@@ -51,7 +51,7 @@ export default class CabinetWallet extends Component {
             <div className="wrapper__section">
                 <Heading title={'Личный кабинет'} />
                 <Balance ton={Wallet.balance.ton} currency={Wallet.balance.rub}
-                         getActive={!!Wallet.wallet_address} sendActive={!!Wallet.is_wallet_deployed}
+                         getActive={!!Wallet.wallet_address} sendActive={Wallet.is_wallet_deployed}
                          historyActive={false} premiumActive={false}/>
             </div>
         );
